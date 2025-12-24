@@ -1,0 +1,11 @@
+{
+  "name": "repopulse-broken-playground",
+  "version": "1.0.0",
+  "description": "Intentionally broken repo for RepoPulse testing",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node ./tests/runTests.js",
+    "lint": "node ./tests/lint.js"
+  },
+  "license": "MIT"
+}
