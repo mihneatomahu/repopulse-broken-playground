@@ -1,0 +1,23 @@
+name: CI (Broken on purpose)
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout codee (typo)
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 99 (doesnt exist)
+        uses: actions/setup-node@v4
+        with:
+          node-version: "99"
+
+      - name: Instal depedencies (typo)
+        run: npm installl
+
+      - name: Run testss (typo)
+        run: npm testt
